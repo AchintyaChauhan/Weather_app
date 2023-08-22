@@ -102,15 +102,21 @@ body{
 
 
 .social-link{
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
-    width: 450px;
+    top: 120px;
+    width: 100%;
+
+}
+
+.social-link ul{
+    padding: 0;
 }
 .social-link li{
     display: inline;
-    margin: 10px 10px;
+    margin: 1px 5px;
 }
 
 .social-link a{
@@ -124,3 +130,24 @@ body{
 
 }
  
+@media screen and (max-width:600px) {
+   .card{
+    height: 250px;
+    width: 200px;
+   }
+
+
+   .social-link{
+    width: 300px;
+    font-size: large;
+    width: 150px;
+    text-align: center;
+    display: inline;
+    
+   }
+  .social-link li{
+    margin : 5px;
+  }
+   
+    
+}
